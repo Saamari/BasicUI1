@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saamari.basicui1.MainActivity">
+<RadioGroup
+    android:id="@+id/myRadioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="29dp">
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/meatballs_text"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/chicken_text"
+        tools:layout_editor_absoluteX="44dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/fish_text"
+        tools:layout_editor_absoluteX="44dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/steak_text"
+        tools:layout_editor_absoluteX="44dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/carrots_text"
+        tools:layout_editor_absoluteX="44dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton4" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="283dp"
+        android:onClick="selectButtonClicked"
+        />
+
+</RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
